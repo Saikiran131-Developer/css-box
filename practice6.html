@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer-box,
+      .card {
+        height: 300px;
+        width: 300px;
+        border: solid 2px black;
+        position: relative;
+      }
+      .inner-box {
+        height: 100px;
+        width: 100px;
+        border: solid 2px black;
+        position: absolute;
+        top: 100px;
+        left: 90px;
+      }
+      .icon {
+        height: 100px;
+        width: 100px;
+        border: solid 2px black;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+      .tooltip-container {
+        height: 300px;
+        width: 300px;
+        border: solid 2px black;
+        position: relative;
+      }
+      .tooltip {
+        height: 100px;
+        width: 100px;
+        border: solid 2px black;
+        position: absolute;
+        top: 8px;
+        left: 100px;
+      }
+
+      .avatar-container {
+        height: 300px;
+        width: 300px;
+        border: solid 2px black;
+        padding-top: 50px;
+        position: relative;
+      }
+     
+      .badge {
+        height: 100px;
+        width: 100px;
+        border: solid 2px black;
+        position: absolute;
+        bottom: 195px;
+        left: 133px;
+      }
+
+      .image-container {
+        height: 300px;
+        width: 300px;
+        border: solid 2px black;
+        padding-top: 50px;
+        position: relative;
+      }
+      .overlay {
+        height: 170px;
+        width: 290px;
+        border: solid 2px black;
+        position: absolute;
+        bottom: 130px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Task1</h1>
+      <div class="outer-box">
+        <div class="inner-box"></div>
+      </div>
+
+      <h1>Task2</h1>
+      <div class="card">
+        card
+        <div class="icon">icon</div>
+      </div>
+
+      <h1>Task3</h1>
+      <div class="tooltip-container">
+        <button class="button">Hover Me</button>
+        <div class="tooltip">Tooltip Text</div>
+      </div>
+
+      <h1>Task 4</h1>
+      <div class="avatar-container">
+        <img src="./avataar.jfif" alt="avatar" class="avatar" />
+        <div class="badge">badge-1</div>
+      </div>
+
+      <h1>Task 5</h1>
+      <div class="image-container">
+        <img src="./avatar.jfif" alt="sample image" class="image" />
+        <div class="overlay"><b>overlay Text</b></div>
+      </div>
+    </center>
+  </body>
+</html>
