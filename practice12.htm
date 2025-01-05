@@ -1,0 +1,94 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .rfg {
+        position: relative;
+      }
+      .kk {
+        font-size: xx-large;
+        position: absolute;
+       top: 360px;
+        left:490px 
+        
+      }
+      #hh {
+        background-color: lightslategrey;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rfg">
+      <img src="./architect.jpg" width="100%" />
+    </div>
+    <div class="kk"><P><span id="hh">BR</span> Architects</P></div>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Page</title>
+    <style>
+      /* General Styles */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: row; /* Default for larger screens */
+        gap: 20px;
+        padding: 20px;
+      }
+      .box {
+        flex: 1; /* Make the boxes equally wide */
+        padding: 20px;
+        text-align: center;
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      /* Tablet and smaller screens */
+      @media (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+        .container {
+          flex-direction: column; /* Stack boxes vertically */
+        }
+      }
+
+      /* Mobile devices */
+      @media (max-width: 480px) {
+        body {
+          font-size: 12px;
+        }
+        .box {
+          padding: 10px; /* Smaller padding for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Responsive Web Page</h1>
+      <p>Resize the browser window to see the effect!</p>
+    </div>
+    <div class="container">
+      <img src="./architect.jpg" alt="" />
+    </div>
+  </body>
+</html>
