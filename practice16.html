@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #222;
+        color: #fff;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .toolbar {
+        display: flex;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+
+      .icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+        color: #fff;
+      }
+
+      .icon i {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .icon span {
+        font-size: 12px;
+      }
+
+      .status-bar {
+        display: flex;
+        margin-top: 10px;
+      }
+
+      .status {
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 0 5px;
+        font-size: 14px;
+      }
+
+      .status.green {
+        background-color: #28a745;
+      }
+
+      .status.red {
+        background-color: #dc3545;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="icon">
+        <i class="fas fa-microphone"></i>
+        <span>Audio</span>
+      </div>
+      <div class="icon">
+        <i class="fas fa-video-slash"></i>
+        <span>Video</span>
+      </div>
+      <div class="icon">
+        <i class="fas fa-users"></i>
+        <span>Participants</span>
+      </div>
+      <div class="icon">
+        <i class="fas fa-comment"></i>
+        <span>Chat</span>
+      </div>
+      <div class="icon">
+        <i class="fas fa-upload"></i>
+        <span>Share</span>
+      </div>
+      <div class="icon">
+        <i class="fas fa-pause"></i>
+        <span>Pause</span>
+      </div>
+      <div class="icon">
+        <i class="fas fa-pencil-alt"></i>
+        <span>Annotate</span>
+      </div>
+      <div class="icon">
+        <i class="fas fa-mouse-pointer"></i>
+        <span>Remote Control</span>
+      </div>
+      <div class="icon">
+        <i class="fas fa-expand-arrows-alt"></i>
+        <span>Show Meeting</span>
+      </div>
+      <div class="icon">
+        <i class="fas fa-ellipsis-h"></i>
+        <span>More</span>
+      </div>
+    </div>
+    <div class="status-bar">
+      <div class="status green">
+        <span>You are screen sharing</span>
+      </div>
+      <div class="status red">
+        <span>Stop Share</span>
+      </div>
+    </div>
+  </body>
+</html>
