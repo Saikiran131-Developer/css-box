@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="3" /> -->
+    <title>Document</title>
+    <style>
+   
+html {
+  scroll-padding-top: 70px; 
+}
+
+      body,
+      html {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Inconsolata", sans-serif;
+
+        width: 100vw;
+      }
+      header {
+        background-color: black;
+        font-family: sans-serif;
+        color: white;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: space-around;
+        padding: 17px;
+        z-index: 999;
+        top: 0;
+      }
+      #link {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;  
+       
+  box-sizing: border-box; 
+      }
+      a:hover {
+        color: black;
+        background-color: lightgrey;
+      
+        
+      }
+      section {
+        padding-top: 52px;
+      }
+      #img1 {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      #p1 {
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 50px;
+        display: flex;
+        justify-content: center;
+        line-height: 1.5;
+        font-size: 90px;
+
+        color: white;
+      }
+      #p2,
+      #p3 {
+        color: white;
+      }
+      #p2 {
+        background-color: black;
+
+        padding: 5px;
+        font-size: smaller;
+        display: inline;
+        position: relative;
+        left: 50px;
+        bottom: 60px;
+      }
+      #p3 {
+        color: white;
+        padding: 5px;
+        font-size: smaller;
+        display: inline;
+        position: relative;
+        bottom: 60px;
+        left: 1000px;
+      }
+      .container2 {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .p5 {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        padding: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        letter-spacing: 4px;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+      }
+      .p5 p {
+        margin: 0;
+        padding: 0;
+      }
+      .p6 {
+        width: 100%;
+        max-width: 700px; 
+        height: auto;
+        margin-top: 50px;
+        font-size: 18px;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        font-weight: lighter;
+        color: #000000;
+        padding: 0 10px;
+      }
+      #p7{
+        border-left:7px solid lightslategray;
+        padding: 15px;
+       font-weight: lighter; 
+        line-height: 30px;
+
+      }
+      .container3{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+     
+      #p8{
+        background-color: #000000;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 5px;
+        padding: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+     
+      .subcontainer3-1 {
+  width: 669px;
+  height: 43px;
+  align-items: center;
+  border: solid lightgray;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.link1 {
+  color: #000000;
+  text-decoration: none;
+  padding-left: 150px;
+  padding-right: 150px;
+  cursor: pointer;
+}
+
+.subcontainer3-2 {
+  width: 669px;
+  height: auto;
+  border: solid lightgray;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+}
+
+.content {
+  opacity: 0;               
+  pointer-events: none;    
+  transition: opacity 0.5s ease-in-out;
+}
+
+#eat:target,
+#drink:target {
+  opacity: 1;               
+  pointer-events: auto;    
+}
+.container4{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.container4-1{
+  width: 710px;
+  height: auto;
+ 
+  margin-top: 30px;
+}
+.coffeee{
+  width: 100%;
+}
+.heading{
+  background-color: #000000;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 5px;
+        padding: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+
+}
+.container4-3{
+
+  width: 675px;
+
+  font-size: 20px;
+}
+.map{
+  width: 100%;
+}
+#fy{
+  background-color: #000000;
+  color: white;
+  padding: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+}
+#input1{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+#input2{
+  font-size: 61.3px;
+  margin-bottom: 20px;
+  color: rgb(54, 53, 53)
+}
+input::placeholder {
+    font-size: 18px; 
+  display: flex;
+  height: 100%;
+  align-items: center;
+  
+}
+#input3{
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  font-size: large;
+  font-family: sans-serif;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+#foot{
+  padding: 0px;
+  margin: 0px;
+  
+}
+#foot:hover{
+  color: green;
+}
+#sub{
+  padding: 0px;
+ 
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav><a id="link" href="#p1">Home</a></nav>
+      <nav><a id="link" href="#about">About</a></nav>
+      <nav><a id="link" href="#p8">Menu</a></nav>
+      <nav><a id="link" href="#where">Where</a></nav>
+    </header>
+
+    <section>
+      <div class="container1">
+        <img id="img1" src="./holidays-images/img1.jpg" alt="cafeimg" />
+        <p id="p1">&nbsp;the<br />Cafe</p>
+        <p>
+          <span id="p2">Open &nbspfrom &nbsp6am &nbspto &nbsp5pm</span
+          ><span id="p3">15 &nbspArd &nbspstreet, &nbsp5015</span>
+        </p>
+      </div>
+      <div class="container2">
+        <div id="about" class="p5"><p>ABOUT THE CAFE</p></div>
+        <div class="p6">
+          <p>
+            The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <p>
+            In addition to our full espresso and brew bar menu, we serve fresh
+            made-to-order breakfast and lunch sandwiches, as well as a selection
+            of sides and salads and other good stuff.
+          </p>
+          <p id="p7">
+            <i>"Use products from nature for what it's worth - but never too early,
+            nor too late." Fresh is the new sweet.</i><br><br> Chef, Coffeeist and Owner:
+            Liam Brown
+          </p>
+          <img src="./holidays-images/img2.jpg" alt="">
+          <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+       <p><strong>Address: </strong>15 Adr street, 5015, NY</p>
+     
+        </div>
+      </div>
+      <div class="container3">
+<div class="subcontainer3">
+  <p id="p8">THE MENU</p>
+</div>
+
+      <div class="subcontainer3-1">
+        <a href="#eat" class="link1">Eat</a>
+        <a href="#drink" class="link1">Drink</a>
+      </div>
+  
+      <div class="subcontainer3-2">
+        <div id="eat" class="content">
+          <h5>Bread Basket</h5>
+          <p id="p9">Assortment of fresh baked fruit breads and muffins 5.50</p>
+          <h5>Honey Almond Granola with Fruits</h5>
+          <p>
+            Natural cereal of honey toasted oats, raisins, almonds and dates 7.00
+          </p>
+          <h5>Belgian Waffle</h5>
+          <p>Vanilla flavored batter with malted flour 7.50</p>
+          <h5>Scrambled eggs</h5>
+          <p>
+            Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+          </p>
+          <h5>Blueberry Pancakes</h5>
+          <p>With syrup, butter and lots of berries 8.50</p>
+        </div>
+  
+        <div id="drink" class="content">
+          <h5>Coffee</h5>
+          <p>Regular coffee 2.50</p>
+          <h5>Chocolato</h5>
+          <p>Chocolate espresso with milk 4.50</p>
+          <h5>Corretto</h5>
+          <p>Vanilla flavored batter with malted flour 7.50</p>
+          <h5>Iced tea</h5>
+          <p>Hot tea, except not hot 3.00</p>
+          <h5>Soda</h5>
+          <p>Coke, Sprite, Fanta, etc. 2.50</p>
+        </div>
+      </div>
+      <div class="container4">
+        <div class="container4-1">
+          <img class="coffeee" src="https://www.w3schools.com/w3images/coffeehouse2.jpg" alt="">
+        </div>
+        <div class="container4-2">
+          <h2 id="where" class="heading">WHERE TO FIND US</h2>
+          
+        </div>
+        <div class="container4-3"><p id="find">Find us at some address at some place.</p>
+        <img class="map" src="https://www.w3schools.com/w3images/map.jpg" alt="">
+      <p><span id="fy">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+     <br><br> <strong>Reserve </strong> a table, ask for today's special or just send us a message:</p>
+     <form>
+    <input id="input1" type="text" placeholder="Name" required><br> 
+    <input id="input1" type="text" placeholder="How Many People" required> <br>
+    <input id="input2" type="datetime-local" placeholder="Date" required><br> 
+    <input id="input1" type="text" placeholder="Message/Special requirements" required> <br> 
+   <a id="sub" href="#"> <input  id="input3" type="submit" value="SEND MESSAGE"></a>
+  </form>
+    </div>
+    
+      </div>
+    </section>
+    <footer><p>Powered by <a id="foot" href="">w3.css</a></p></footer>
+  </body>
+</html>
