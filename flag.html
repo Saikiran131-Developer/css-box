@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+      }
+      .saffron {
+        background-color: #ff671f;
+      }
+      .white {
+        background-color: #ffffff;
+      }
+      .green {
+        background-color: #046a38;
+      }
+      .green,
+      .white,
+      .saffron {
+        display: block;
+        content: " ";
+        height: 110px;
+        width: 490px;
+        border: 1px solid;
+        position: relative;
+        bottom: 110px;
+      }
+      .inner-circle {
+        height: 110px;
+        background-color: white;
+        border: 1px solid;
+        width: 110px;
+        border-radius: 50%;
+        position: absolute;
+
+        top: 138px;
+        left: 620px;
+      }
+      .stick1 {
+        height: 2px;
+        width: 110px;
+        background-color: #06038d;
+        position: relative;
+        top: 55px;
+        transform: rotate(180deg);
+      }
+     .stick2 {
+       
+        position: relative;
+        top: 50px;
+        transform: rotate(90deg);
+      }
+      .stick2,
+      .stick3,
+      .stick4,
+      .stick5,
+      .stick6 ,.stick7,.stick8{
+        height: 2px;
+        width: 110px;
+        background-color: #06038d;
+        position: relative;
+        top: 50px;
+        transform: rotate(90deg);
+      }
+      .stick3 {
+        position: relative;
+        transform: rotate(140deg);
+        top:50px;
+      }
+      .stick4 {
+        top: 50px;
+        position: relative;
+        transform: rotate(50deg);
+      }
+      .stick5 {
+        top: 48px;
+        position: relative;
+        transform: rotate(200deg);
+      }
+      .stick6 {
+        top: 45px;
+        position: relative;
+        transform: rotate(290deg);
+      }
+      .stick7{
+        top: 45px;
+        position: relative;
+        transform: rotate(160deg);
+      }
+      .stick8{
+        top: 40px;
+        position: relative;
+        transform: rotate(70deg);
+      }
+      .big-stick{
+        height: 700px;
+        background-color: black;
+        width: 10px;
+        position: relative;
+        right: 194px;
+        bottom:130px
+      }
+    </style>
+  </head>
+  <body>
+    <div class="saffron"></div>
+    <div class="white"></div>
+    <div class="green"></div>
+
+    <div class="circle">
+      <div class="inner-circle">
+        <div class="stick1"></div>
+        <div class="stick2"></div>
+        <div class="stick3"></div>
+        <div class="stick4"></div>
+        <div class="stick5"></div>
+        <div class="stick6"></div>
+        <div class="stick7"></div>
+        <div class="stick8"></div>
+        <div class="big-stick"></div>
+      </div>
+    </div>
+  </body>
+</html>
