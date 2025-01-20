@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      
+    }
+.box-px{
+  height: 100px;
+  width: 200px;
+  background-color: aqua;
+  text-align: center;
+}
+.parent-percent{
+  width: 350px;
+  background-color: blueviolet;
+  height: 250px;
+}
+.child-percent{
+  width: 50%;
+  background-color: lightcoral;
+  
+  height: 50%;
+}
+.rem-paragraph{
+  font-size: 2rem;
+}
+.parent-em{
+  font-size: 16px;
+
+}
+.child-em{
+  font-size: 1.5em;
+}
+.box-vw{
+  width: 50vw;
+  background-color: lightseagreen;
+}
+.box-vh{
+  height: 25vh;
+  background-color: lightskyblue;
+}
+.square-vmin{
+  width: 20vmin;
+  height: 20vmin;
+  background-color: chartreuse;
+}
+.square-vmax{
+  width: 20vmax;
+  height: 20vmax;
+  background-color: chartreuse;
+}
+.parent-relative{
+  position: relative;
+  height: 300px;
+  width: 300px;
+  background-color: aqua;
+}
+.chid-absolute{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: limegreen;
+  right: 0;
+  bottom: 0;
+}
+.parent-font{
+  font-size: 20px;
+
+}
+.child-font{
+  font-size: inherit;
+}
+
+  </style>
+</head>
+<body>
+  <h2>1.PX</h2>
+  <h2>Explanation: if we take pixels there is no change when the view port changes because it is fixed in height and width </h2>
+  
+  <div class="box-px">Box with px units</div>
+  <br>
+<h2>2.percentages</h2>
+<p><b>Explanation:</b>when i change the container size , the child container size is changing due to it taking the parents size  50% </p>
+  <div class="parent-percent">
+    <div class="child-percent">Box with % units</div>
+  </div>
+<h2>3.REM</h2>
+<p class="rem-paragraph">
+  This paragraph uses rem units.
+</p>
+<h2>4.em</h2>
+<div class="parent-em"><p>This Paragraph </p>
+  <p class="child-em">This Paragraph uses em units</p>
+</div>
+<h2>5.vw</h2>
+<div class="box-vw">Box with vw units</div>
+
+<h2>6.vh</h2>
+<div class="box-vh">Box with vh units</div>
+<h2>7.vmin</h2>
+<div class="square-vmin">square with vmin units</div>
+<h2>8.vmax</h2>
+<div class="square-vmax">square with vmax units</div>
+<h2>9.parent-child Relationship</h2>
+<p><b>Explanation:</b>when we use child as absolute it search for non static like relative etc.</p>
+<div class="parent-relative">
+  <div class="chid-absolute">Child box</div>
+</div>
+<h2>10.Parent child Relation ship</h2>
+<p><b>Explanation:</b>when i change the parent font size the child font size is affecting due to inherit functionality</p>
+<div class="parent-font">
+  Parent Text
+<div class="child-font">Child Text(inherits Font Size)</div>
+</div>
+
+
+</body>
+</html>
