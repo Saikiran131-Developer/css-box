@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.item1 {
+    grid-area: a;
+    background-color: lightcoral;
+}
+
+.item2 {
+    grid-area: b;
+    background-color: lightblue;
+}
+
+.item3 {
+    grid-area: c;
+    background-color: lightgreen;
+}
+
+.item4 {
+    grid-area: d;
+    background-color: lightsalmon;
+}
+
+.item5 {
+    grid-area: e;
+    background-color: pink;
+}
+
+.item6 {
+    grid-area: f;
+    background-color: lightslategray;
+}
+
+.item7 {
+    grid-area: g;
+    background-color: lightyellow;
+}
+
+.item8 {
+    grid-area: h;
+    background-color: lightsteelblue;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    gap:10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+'a b b c'
+'a d e f'
+'a g h f'}
+
+@media screen and (max-width:500px)
+{
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g'
+        'h';
+
+    }
+}
+.container2{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+grid-template-areas: 
+'a a a'
+'b c c'
+'b d e'
+'f f f';
+
+}
+.items {
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.header{
+    grid-area: a;
+    background-color: lightcoral;
+
+}
+.sidebar{
+    grid-area: b;
+    background-color: lightcyan;
+}
+.content1{
+    grid-area: c;
+    background-color: lightgrey;
+
+}
+.content2{
+    grid-area: d;
+background-color: lightsalmon;
+}
+.content3{
+    grid-area: e;
+background-color: lightyellow;
+}
+.footer{
+    grid-area: f;
+    background-color: limegreen;
+
+}
+
+.header {
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(90, 51, 90) 40%,
+          rgb(73, 73, 211)
+        );
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid black;
+      }
+      .sidebar {
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(5, 111, 146),
+          lightblue
+        );
+        border: 2px solid;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid black;
+      }
+      .content1 {
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(14, 14, 178),
+          rgb(130, 196, 222)
+        );
+        border: 2px solid;
+     
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid black;
+      }
+      .content2 {
+        background-image: linear-gradient(
+          to top left,
+          rgb(55, 55, 182),
+          rgb(100, 166, 187)
+        );
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid black;
+      }
+      .content3 {
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(73, 73, 183),
+          rgb(180, 193, 224)
+        );
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid black;
+      }
+      .footer {
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(90, 51, 90) 40%,
+          rgb(73, 73, 211)
+        );
+        border: 2px solid;
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid black;
+      }
+ @media screen and (max-width : 500px){
+    .container2{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        ;
+
+    }
+ }
+
+ /* just now */
+ .container1 {
+        display: grid;
+    
+        gap: 10px;
+        
+        text-align: center;
+        height: 100vh;
+        font-size: 2rem;
+        background-color: #203040;
+        padding: 10px;
+        
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    'a b b c c'
+    'd b b e e'
+    'f g h i j'
+    'k l h m n';
+    
+      }
+      .itemm1 {
+        grid-area: a;
+        background-image: linear-gradient(
+          to top right,
+          rgb(154, 80, 92),
+          lightblue
+        );
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm2 {
+        grid-area: b;
+        background-image: linear-gradient(
+          to top left,
+          rgb(154, 80, 90),
+          lightblue
+        );
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm3 {
+        grid-area: c;
+        background-image: linear-gradient(
+          to top left,
+          rgb(103, 185, 213),
+          pink
+        );
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm4 {
+        grid-area: d;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(106, 182, 207),
+          pink
+        );
+     
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm5 {
+        grid-area: e;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(211, 123, 138),
+          skyblue
+        );
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm6 {
+        grid-area: f;
+        background-image: linear-gradient(
+          to top left,
+          rgb(211, 123, 138),
+          skyblue
+        );
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm7 {
+        grid-area: g;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(211, 123, 138),
+          skyblue
+        );
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm8 {
+        grid-area: h;
+        background-image: linear-gradient(
+          to top left,
+          rgb(211, 123, 138),
+          skyblue
+        );
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm9 {
+        grid-area: i;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(211, 123, 138),
+          skyblue
+        );
+     
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm10 {
+        grid-area: j;
+        background-image: linear-gradient(
+          to top left,
+          rgb(211, 123, 138),
+          skyblue
+        );
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm11 {
+        grid-area: k;
+        background-image: linear-gradient(
+          to bottom left,
+          rgb(211, 123, 138),
+          skyblue
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm12 {
+        grid-area: l;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(211, 123, 138),
+          skyblue
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm13 {
+        grid-area: m;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(211, 123, 138),
+          skyblue
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .itemm14 {
+        grid-area: n;
+        background-image: linear-gradient(
+          to top left,
+          rgb(211, 123, 138),
+          skyblue
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media screen and (max-width : 500px){
+    .container1{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        grid-template-areas: 
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g'
+        'h'
+        'i'
+        'j'
+        'k'
+        'l'
+        'm'
+        'n'
+        ;
+
+    }
+ }
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <h1>Headache1</h1>
+    <div class="container">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+        <div class="item item5">item5</div>
+        <div class="item item6">item6</div>
+        <div class="item item7">item7</div>
+        <div class="item item8">item8</div>
+    </div>
+    <br>
+    <h1>Task2</h1>
+   <div class="container2">
+      <div class="items header">header</div>
+      <div class="items sidebar">sidebar</div>
+      <div class="items content1">content1</div>
+      <div class="items content2">content2</div>
+      <div class="items content3">content3</div>
+      <div class="items footer">footer</div>
+    </div>
+    <h1>Task3</h1>
+    <div class="container1">
+        <div class="itemm itemm1">itemm1</div>
+        <div class="itemm itemm2">itemm2</div>
+        <div class="itemm itemm3">itemm3</div>
+        <div class="itemm itemm4">itemm4</div>
+        <div class="itemm itemm5">itemm5</div>
+        <div class="itemm itemm6">itemm6</div>
+        <div class="itemm itemm7">itemm7</div>
+        <div class="itemm itemm8">itemm8</div>
+        <div class="itemm itemm9">itemm9</div>
+        <div class="itemm itemm10">itemm10</div>
+        <div class="itemm itemm11">itemm11</div>
+        <div class="itemm itemm12">itemm12</div>
+        <div class="itemm itemm13">itemm13</div>
+        <div class="itemm itemm14">itemm14</div>
+      </div>
+</body>
+</html>
